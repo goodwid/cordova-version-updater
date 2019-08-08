@@ -1,0 +1,25 @@
+{
+  "name": "cordova-version-updater",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "cv-update": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Goodwin <goodwid@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "xml-js": "^1.6.11"
+  },
+  "keywords": [
+    "cordova",
+    "ionic",
+    "semantic",
+    "version",
+    "config.xml"
+  ]
+}
