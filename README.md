@@ -1,7 +1,6 @@
-<h1 align="center">Welcome to cordova-version-updater 👋</h1>
-<p>
-  <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-</p>
+# Welcome to cordova-version-updater
+
+<img src="https://img.shields.io/badge/version-0.1.0-blue.svg?vacheSeconds=2592000" />
 
 Semantic version updater for cordova config.xml files
 
@@ -15,9 +14,9 @@ npm i cordova-version-updater -g
 
 Will update one (and only one) of either major, minor, or patch versions, and write the changes to the config file.  It defaults to `config.xml` in the current directory, however you can specify a path by `cv-update -p project/cordova/config.xml`, for example.
 
-<pre>
+``` shell
 > cv-update -h
-Usage: cv-update [options] &ltfile&gt
+Usage: cv-update [options] <file>
 
 Semantic versioning updater for cordova config.xml files
 
@@ -25,10 +24,12 @@ Options:
   -M --major     Increments major version
   -m --minor     Increments minor version
   -p --patch     Increments patch version
+  -z --zero      Zero out the lower versions when updating a minor
+                 or major versions, e.g.: 1.2.4 to 2.0.0
   -V, --version  output the version number
   -h, --help     output usage information
+```
 
-</pre>
 ## Run tests
 
 ```sh
