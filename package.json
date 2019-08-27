@@ -1,13 +1,13 @@
 {
   "name": "cordova-version-updater",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Semantic version updater for cordova config.xml files",
   "main": "index.js",
   "bin": {
     "cv-update": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/updater.test.js"
   },
   "author": "David Goodwin <goodwid@gmail.com>",
   "repository": {
@@ -28,5 +28,8 @@
     "semantic",
     "version",
     "config.xml"
-  ]
+  ],
+  "devDependencies": {
+    "chalk": "^2.4.2"
+  }
 }
